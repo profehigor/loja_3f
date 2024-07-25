@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="" alt="">
+        </div>
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#contato">Contato</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="O que você procura?">
+            <button>Buscar</button>
+        </div>
+    </header>
+    <main class="main">
+        <div class="section-buttons">
+            <div class="section-button" onclick="window.location.href='#filmes'">
+                <img src="https://www.focusfeatures.com/_next/image?url=https%3A%2F%2Fff-media-assets.raptor.nbcuniversal.com%2Fpost_5953d6733a487_fffd6eac32.jpg&w=3840&q=75" alt="Filmes">
+                <span>FIlmes</span>
+            </div>
+            <div class="section-button" onclick="window.location.href='#series'">
+                <img src="https://tm.ibxk.com.br//ms/images/highlights/000/039/115/37464.jpg" alt="Séries">
+                <span>Séries</span>
+            </div>
+            <div class="section-button" onclick="window.location.href='#livros'">
+                <img src="https://www.nucleodoconhecimento.com.br/blog/wp-content/uploads/2020/09/publicando-livros.png" alt="Livros">
+                <span>Livros</span>
+            </div>
+        </div>
+        <div class="products">
+            <div class="arrow" onclick="scrollProducts(-1)">&#9664;</div>
+            <div class="product-list" id="product-list">
+                <div class="product">
+                    <img src="https://via.placeholder.com/200x150" alt="Produto 1">
+                    <span>Produto 1</span>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/200x150" alt="Produto 2">
+                    <span>Produto 2</span>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/200x150" alt="Produto 3">
+                    <span>Produto 3</span>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/200x150" alt="Produto 4">
+                    <span>Produto 4</span>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/200x150" alt="Produto 5">
+                    <span>Produto 5</span>
+                </div>
+            </div>
+            <div class="arrow" onclick="scrollProducts(1)">&#9654;</div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
